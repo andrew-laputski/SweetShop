@@ -1,52 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8310ba4-17da-44c7-9ee8-1021e7da29f2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cart/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cart/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cart/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cart/cart.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cart/context_processors.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cart/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cart/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cart/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cart/templates/cart/cart_view.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cart/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cart/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cart/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/orders/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/orders/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/orders/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/orders/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/orders/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/orders/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/orders/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/orders/templates/order/create.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/orders/templates/order/created.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/orders/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/orders/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/orders/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shop/migrations/0006_auto_20181210_1723.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shop/migrations/0007_auto_20181211_1021.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SweetShop/settings.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shop/templates/shop/base1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shop/templates/shop/cart1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shop/templates/shop/cart_view.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shop/templates/shop/category1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shop/templates/shop/product1.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SweetShop/urls.py" afterPath="$PROJECT_DIR$/SweetShop/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements" afterPath="$PROJECT_DIR$/requirements" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shop/admin.py" afterPath="$PROJECT_DIR$/shop/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shop/models.py" afterPath="$PROJECT_DIR$/shop/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shop/templates/shop/base.html" afterPath="$PROJECT_DIR$/shop/templates/shop/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shop/templates/shop/category_list.html" afterPath="$PROJECT_DIR$/shop/templates/shop/category_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shop/templates/shop/product_list.html" afterPath="$PROJECT_DIR$/shop/templates/shop/product_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shop/urls.py" afterPath="$PROJECT_DIR$/shop/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shop/views.py" afterPath="$PROJECT_DIR$/shop/views.py" />
-    </list>
+    <list default="true" id="f8310ba4-17da-44c7-9ee8-1021e7da29f2" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +124,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
@@ -253,7 +208,7 @@
   <component name="ToolWindowManager">
     <frame x="682" y="52" width="1301" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2119522" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2119522" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -261,7 +216,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289256" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.251944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.251944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
