@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'shop',
+    'cart',
+    'orders',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -63,6 +66,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'cart.context_processors.cart',
             ],
         },
     },
@@ -106,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'ru-ru'
 
-TIME_ZONE = 'Europe/Moscow'
+TIME_ZONE = 'Europe/Minsk'
 
 USE_I18N = True
 
@@ -127,4 +131,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static_in_dev'),
 )
+
 CART_SESSION_ID = 'cart'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap3'

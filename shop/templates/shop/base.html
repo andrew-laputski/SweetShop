@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Сладкий Сайт - Главная</title>
+    <title>Сладкий Сайт</title>
     <!-- Bootstrap Core CSS -->
     <link href='{% static "css/bootstrap.css" %}' rel="stylesheet">
 
@@ -56,7 +56,15 @@
                 {% endif %}
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="{% url 'cart_view' %}">Корзина <span class='badge' id='cart_count'>{% if not request.session.total %} 0 {% else %} {{ request.session.total }} {% endif %}</span></a></li>
+                   <li>
+                       {% with total_items=cart|length %}
+                           <a href="{% url 'cart_view' %}">
+                               Корзина:
+                               {{ total_items }},
+                               {{ cart.get_total_price }} руб.
+                           </a>
+                       {% endwith %}
+                   </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -126,10 +134,12 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="{{ product.image.url }}" alt="" style="width:100%; height:250px;">
+                            <a href="{{ product.get_absolute_url }}">
+                                <img src="{{ product.image.url }}" alt="" style="width:100%; height:250px;">
+                            </a>
                             <div class="caption">
                                 <h4 class="pull-right">{{ product.price }} руб.</h4>
-                                <h4><strong><a href="{% url 'product_list' product_slug=product.slug %}">{{ product.title }}</a></strong></a>
+                                <h4><strong><a href="{{ product.get_absolute_url }}">{{ product.title }}</a></strong></a>
                                 </h4>
                                 <p>{{ product.description }}</p>
                             </div>
@@ -143,7 +153,12 @@
                                     <span class="glyphicon glyphicon-star"></span>
                                 </p>
                             </div>
-                            <p class="text-center"><a href="{% url 'add_to_cart' product_slug=product.slug %}"><button class="btn btn-danger">Добавить в корзину</button></a></p>
+                            <form action="{% url 'cart_add' product.id %}" method="post">
+                                            {{ cart_product_form }}
+                                            {% csrf_token %}
+                                    <input type="submit" class="btn btn-danger" value="Добавить в корзину">
+                            </form>
+                       <!--     <p class="text-center"><a href="{ url 'cart_add' product.id %}" method="post"><button class="btn btn-danger">Добавить в корзину</button></a></p> -->
                         </div>
                     </div>
                     {% endfor %}

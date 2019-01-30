@@ -10,7 +10,11 @@
     <p>{% lorem %}</p>
     <hr>
     <p style="font-size:25px;">Цена: <strong>{{ product.price }} руб.</strong></p>
-    <a href='{% url 'add_to_cart' product_slug=product.slug %}'><button class='btn btn-danger'>Добавить в корзину</button></a>
+    <form action="{% url 'cart_add' product.id %}" method="post">
+                {{ cart_product_form }}
+                {% csrf_token %}
+        <input type="submit" class="btn btn-danger" value="Добавить в корзину">
+    </form>
     </div>
 
 {% endblock content %}

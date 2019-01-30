@@ -1,0 +1,40 @@
+{% extends 'shop/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Заказ{% endblock %}
+
+{% block content %}
+
+    <h1>Заказ</h1>
+    <div class="order-info">
+        <h3>Ваш заказ</h3>
+        <ul>
+            {% for item in cart %}
+                <li>
+                    {{ item.quantity }}x {{ item.product.title }}
+                    <span>{{ item.total_price }} руб.</span>
+                </li>
+            {% endfor %}
+        </ul>
+        <p>Всего: {{ cart.get_total_price }} руб.</p>
+    </div>
+
+    <form action="" method="POST">
+    <div class="col-sm-4">
+        {{ form.first_name|as_crispy_field }}
+    </div>
+    <div class="col-sm-4">
+        {{ form.last_name|as_crispy_field }}
+    </div>
+    <div class="col-sm-4">
+        {{ form.phone|as_crispy_field }}
+    </div>
+        {{ form.email|as_crispy_field }}
+        {{ form.buying_type|as_crispy_field }}
+        {{ form.address|as_crispy_field }}
+        {{ form.comments|as_crispy_field }}
+        <input type="submit" class="btn btn-success" value="Оформить заказ">
+        {% csrf_token %}
+    </form>
+
+{% endblock %}
